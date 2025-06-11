@@ -27,7 +27,7 @@
     "publishedat": {
       "type": "string"
     },
-    "imageurl": {
+    "imageUrl": {
       "type": "media",
       "multiple": false,
       "required": false,
