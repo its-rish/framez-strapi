@@ -21,24 +21,6 @@
       "relation": "oneToMany",
       "target": "api::article.article",
       "mappedBy": "category"
-    },
-    "technologies": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::technology.technology",
-      "mappedBy": "category"
-    },
-    "business": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::business.business",
-      "inversedBy": "categories"
-    },
-    "health": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::health.health",
-      "mappedBy": "category"
     }
   }
 }
