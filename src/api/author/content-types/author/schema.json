@@ -28,6 +28,18 @@
         "images",
         "files"
       ]
+    },
+    "businesses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::business.business",
+      "mappedBy": "author"
+    },
+    "health": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::health.health",
+      "mappedBy": "author"
     }
   }
 }

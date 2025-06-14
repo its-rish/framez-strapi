@@ -31,6 +31,21 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category",
+      "mappedBy": "business"
+    },
+    "author": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::author.author",
+      "inversedBy": "businesses"
+    },
+    "raw": {
+      "type": "richtext"
     }
   }
 }

@@ -32,6 +32,21 @@
     },
     "date": {
       "type": "date"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "health"
+    },
+    "author": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::author.author",
+      "inversedBy": "health"
+    },
+    "raw": {
+      "type": "richtext"
     }
   }
 }
