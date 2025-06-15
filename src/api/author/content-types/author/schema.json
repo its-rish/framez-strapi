@@ -28,6 +28,16 @@
         "images",
         "files"
       ]
+    },
+    "slug": {
+      "type": "uid",
+      "required": true
+    },
+    "jobTitle": {
+      "type": "string"
+    },
+    "jobDesc": {
+      "type": "string"
     }
   }
 }
