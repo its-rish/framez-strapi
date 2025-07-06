@@ -14,7 +14,8 @@
     "name": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": true,
+      "regex": "^[a-z]+$"
     },
     "articles": {
       "type": "relation",
@@ -25,6 +26,12 @@
     "slug": {
       "type": "uid",
       "required": true
+    },
+    "featured_post": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::featured-post.featured-post",
+      "inversedBy": "categories"
     }
   }
 }
