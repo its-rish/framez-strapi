@@ -55,6 +55,9 @@
     },
     "date": {
       "type": "datetime"
+    },
+    "Featured": {
+      "type": "boolean"
     }
   }
 }

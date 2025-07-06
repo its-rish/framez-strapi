@@ -26,12 +26,6 @@
     "slug": {
       "type": "uid",
       "required": true
-    },
-    "featured_post": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::featured-post.featured-post",
-      "inversedBy": "categories"
     }
   }
 }
